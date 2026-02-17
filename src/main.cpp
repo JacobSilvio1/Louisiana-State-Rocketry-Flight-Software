@@ -42,6 +42,7 @@ void loop() {
                 break;
             } else {
                 /* Pre-Launch Code goes here */
+                sensors.update();
                 break;
             }
         case BURN:
@@ -104,3 +105,4 @@ bool apogeeDetect(const RingBuffer<RING_SIZE>& ring) {
 bool landingDetect(const RingBuffer<RING_SIZE>& ring) {
     return true;
 }
+
